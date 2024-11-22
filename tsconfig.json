@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // 指定 ECMAScript 目标版本
+    "module": "CommonJS",                 // 生成代码使用的模块规范
+    "strict": true,                       // 启用所有严格类型检查选项
+    "esModuleInterop": true,              // 允许对 CommonJS 和 ES 模块之间进行互操作
+    "moduleResolution": "node",           // 模块解析策略
+    "sourceMap": true,                    // 生成对应的 .map 文件
+    "outDir": "dist",                     // 指定输出目录
+    "rootDir": "src",                     // 指定输入文件的根目录
+    "baseUrl": ".",                       // 基础路径
+    "paths": {                            // 模块别名
+      "@/*": ["src/*"]
+    },
+    "resolveJsonModule": true,            // 允许导入 .json 文件
+    "skipLibCheck": true,                 // 跳过库文件的类型检查
+    "forceConsistentCasingInFileNames": true  // 强制文件名大小写一致
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "test"]
+}
