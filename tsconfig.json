@@ -16,6 +16,6 @@
     "skipLibCheck": true,                 // 跳过库文件的类型检查
     "forceConsistentCasingInFileNames": true  // 强制文件名大小写一致
   },
-  "include": ["src", "app.ts"],
+  "include": ["src", "src/app.ts"],
   "exclude": ["node_modules", "dist", "test"]
 }
